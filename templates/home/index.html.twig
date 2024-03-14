@@ -1,20 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Flaro --Webapp
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ title }}! ✅</h1>
+	<div class="nav">
+		{{ include('components/nav.html.twig') }}
+	</div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/proprietaire/flaro/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>/Users/proprietaire/flaro/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+    <div class="hero-discover">
+		{{ include('components/hero-discover.html.twig') }}
+	</div>
+    <div class="header-image">
+		{{ include('components/header-image.html.twig') }}
+	</div>
+    <div class="middle">
+		{{ include('components/middle.html.twig') }}
+	</div>
+    <div class="join">
+		{{ include('components/join.html.twig') }}
+	</div>
+    <div class="testimonial">
+		{{ include('components/testimonials.html.twig') }}
+	</div>
+
+
+	<div class="footer">
+		{{ include('components/footer.html.twig') }}
+	</div>
+
 {% endblock %}
